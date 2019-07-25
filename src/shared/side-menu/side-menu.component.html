@@ -1,0 +1,27 @@
+
+<div class="row side-menu">
+  <div class="col-12 logo-container">
+    <div class="logo-container">
+
+      <h5 class="app-name">Money Place - Bills Tracker</h5>
+    </div>
+
+    <!-- <ul>
+      <li>
+        <a href="/despesas"   class="">
+          <i class="fa fa-home"></i> Despesas
+        </a>
+      </li>
+    </ul> -->
+
+    <div class="list-group list-group-flush">
+      <a href="/despesas"   class="list-group-item list-group-item-action" [ngClass]="{'active': activeRoute == '/despesas'}"><i class="fa fa-home"></i> Despesas</a>
+      <a href="/contas"  class="list-group-item list-group-item-action" [ngClass]="{'active': activeRoute == '/contas'}"><i class="fa fa-wallet"></i> Gerenciar Contas</a>
+    </div>
+
+  </div>
+
+  <div class="col-12">  
+    
+  </div>
+</div>

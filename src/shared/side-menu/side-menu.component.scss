@@ -1,0 +1,22 @@
+.logo-container {
+    height: 102px;
+    padding-top: 18px;
+}
+.side-menu {
+    border-right: 1px solid #182338f2;
+    height: 100vh;
+    background: #182338f2;
+}
+.app-name {
+    color: #1ab394;
+}
+.list-group-item {
+    background-color: transparent;
+    color: #f3f3f4;
+}
+.list-group-item:hover, .list-group-item.active {
+    color: #1ab394;
+}
+.list-group-item, .list-group-item.active {
+    border: none;
+}

@@ -1,0 +1,83 @@
+{
+  "contas": [
+    {
+      "id": 1,
+      "nome": "Carteira",
+      "saldo": 2300,
+      "icone": "fa fa-wallet"
+    },
+    {
+      "nome": "Conta Bancária",
+      "saldo": 850.45,
+      "icone": "fa fa-university",
+      "id": 2
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Veículo",
+      "icone": "fa fa-car"
+    },
+    {
+      "id": 2,
+      "nome": "Alimentação",
+      "icone": "fa fa-utensils"
+    },
+    {
+      "id": 3,
+      "nome": "Despesas Fixas",
+      "icone": "fa fa-home"
+    }
+  ],
+  "despesas": [
+    {
+      "descricao": "Internet",
+      "valor": 100,
+      "categoria": {
+        "id": 3,
+        "nome": "Despesas Fixas",
+        "icone": "fa fa-home"
+      },
+      "conta": {
+        "id": 1,
+        "nome": "Carteira",
+        "saldo": 2400,
+        "icone": "fa fa-wallet"
+      },
+      "id": 2
+    },
+    {
+      "descricao": "IPVA moto",
+      "valor": 450,
+      "categoria": {
+        "id": 1,
+        "nome": "Veículo",
+        "icone": "fa fa-car"
+      },
+      "conta": {
+        "id": 1,
+        "nome": "Carteira",
+        "saldo": 2300,
+        "icone": "fa fa-wallet"
+      },
+      "id": 4
+    },
+    {
+      "descricao": "Parcela do Carro",
+      "valor": 733.5,
+      "categoria": {
+        "id": 1,
+        "nome": "Veículo",
+        "icone": "fa fa-car"
+      },
+      "conta": {
+        "id": 1,
+        "nome": "Carteira",
+        "saldo": 2300,
+        "icone": "fa fa-wallet"
+      },
+      "id": 5
+    }
+  ]
+}

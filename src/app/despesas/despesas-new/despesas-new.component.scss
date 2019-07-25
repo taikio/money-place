@@ -1,0 +1,27 @@
+.card-category {
+    margin: 4px;
+    border: 1px solid #ededed;
+    box-shadow: 2px 2px 4px #9e9e9e;
+    padding: 8px 4px;
+    border-radius: 6px;
+}
+
+.card-category:hover {
+    cursor: pointer;
+    background-color: #ededed;
+}
+
+.card-category.active {
+    background-color: #ededed;
+}
+
+.card-category .icon {
+    font-size: 28px;
+}
+
+.card-category .name {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0px;
+}

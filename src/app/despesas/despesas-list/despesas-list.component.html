@@ -1,0 +1,67 @@
+<!-- Start your project here-->
+<!-- <div style="height: 100vh">
+  <div class="flex-center flex-column">
+    <h1 class="animated fadeIn mb-4">Material Design for Bootstrap (Angular)</h1>
+
+    <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
+    <h6 class="animated fadeIn mb-3">Start browsing <a href="https://mdbootstrap.com/angular">documentation</a>.</h6>
+
+    <p class="animated fadeIn text-muted">MDB Team</p>
+  </div>
+</div> -->
+<!-- /Start your project here-->
+<div class="container-fluid">
+  <div class="row">
+    <!-- ========= Menu lateral ============= -->
+    <div class="col-3">
+      <app-side-menu></app-side-menu>
+    </div>
+    <!-- =========== End menu lateral =========== -->
+    <div class="col-9">
+      <div class="row">
+        <!-- ========= Main header =========== -->
+        <div class="col-12">
+            <app-main-header title="{{saldoAtual}}"></app-main-header>
+        </div>        
+        <!-- ========== End main header ========= -->
+
+        <!-- ========== Lista de despesas ======= -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+                <ul class="list-group list-group-flush">
+                  <!-- ========== Item da lista ========== -->
+                  <li class="list-group-item" *ngFor="let despesa of listaDespesas">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="row">
+                          <div class="col-12">
+                              <i class="{{ despesa.categoria.icone }}" style="color: #23c6c8 !important;"></i> 
+                              {{ despesa.descricao }}
+                          </div>
+                          <div class="col-12">
+                              <small><span style="color: #23c6c8;">{{ despesa.conta.nome }}</span></small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-5">
+                          <span class="valor negativo">{{ despesa.valor | currency: 'R$ ' }}</span>
+                      </div>
+                      <div class="col-1">
+                        <button class="btn btn-sm btn-danger" (click)="excluirDespesa(despesa)"><i class="fa fa-times"></i></button>
+                      </div>
+                    </div>      
+                  </li>
+                  <!-- ========== End item da lista ========== -->
+                </ul>
+              </div>
+            </div>
+          </div>                      
+        <!-- ========== End lista de despesas ======= -->
+        <button class="btn-floating btn-primary" (click)="addDespesa()">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+/* ======== Customizações Globais ======== */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.valor{
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+} 
+.negativo {
+    color: #ed5565;
+}
+.positivo {
+    color: #1ab394;
+}
+
+.btn-floating {
+    position: fixed;
+    z-index: 1000;
+    right: 18px;
+    bottom: 20px;
+    box-shadow: 2px 4px 2px #9e9e9e;
+    border-radius: 50%;
+    padding: 20px;
+    background: #1ab394;
+    color: #f3f3f4;
+    border-color: #1ab394;
+}
+.btn-primary {
+    background-color: #1ab394 !important;
+    border-color: #1ab394 !important;
+}
+.form-control {
+    background: #f4f7fa !important;
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+}

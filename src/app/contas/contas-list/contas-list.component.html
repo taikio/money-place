@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <div class="row">
+    <!-- ========= Menu lateral ============= -->
+    <div class="col-3">
+      <app-side-menu></app-side-menu>
+    </div>
+    <!-- =========== End menu lateral =========== -->
+    <div class="col-9">
+      <div class="row">
+        <!-- ========= Main header =========== -->
+        <div class="col-12">
+            <app-main-header title="Gerenciar Contas"></app-main-header>
+        </div>        
+        <!-- ========== End main header ========= -->
+
+        <!-- ========== Lista de contas ======= -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+                <ul class="list-group list-group-flush">
+                  <!-- ========== Item da lista ========== -->
+                  <li class="list-group-item" *ngFor="let conta of listaContas">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="row">
+                          <div class="col-12">
+                              <i class="{{ conta.icone }}" style="color: #23c6c8 !important;"></i> 
+                              {{ conta.nome }}
+                          </div>
+                          <div class="col-12">
+                            <span class="positivo"><small>Saldo Inicial</small> {{ conta.saldo | currency:'R$ ' }}</span>  
+                          </div>                      
+                        </div>
+                      </div>                      
+                    </div>      
+                  </li>
+                  <!-- ========== End item da lista ========== -->
+                </ul>
+              </div>
+            </div>
+          </div>                      
+        <!-- ========== End lista de despesas ======= -->
+        <button class="btn-floating" (click)="addConta()">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
