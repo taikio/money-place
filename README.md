@@ -1,10 +1,15 @@
-# BitBudget
+
+# Money Place
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
 ## Development server
 
+### Befor run the project install json-server globally on your machine
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+Navigate to `src/app/model` folder and run `json-server database.json`
 
 ## Code scaffolding
 
