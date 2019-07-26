@@ -3,7 +3,7 @@
 
 This is a bills tracker app created with [Angular](https://angular.io/) and [Bootstrap](https://getbootstrap.com/)
 
-![Alt Money Place Screenshot](src/app/assets/screenshot.png?raw=true "Money Place Screenshot")
+![Alt Money Place Screenshot](src/assets/screenshot.png?raw=true "Money Place Screenshot")
 
 ## Development server
 
