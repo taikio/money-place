@@ -1,7 +1,9 @@
 
 # Money Place
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+This is a bills tracker app created with [Angular](https://angular.io/) and [Bootstrap](https://getbootstrap.com/)
+
+![Alt Money Place Screenshot](src/app/assets/screenshot.png?raw=true "Money Place Screenshot")
 
 ## Development server
 
